@@ -1,10 +1,10 @@
 <p id="notice"><%%= notice %></p>
 
-<div class="w3-panel">
+<div class="w3-container">
 
-<div class="w3-panel"><%= singular_table_name %></div>
+<div class="w3-container"><%= singular_table_name %></div>
 
-<div class="w3-panel">
+<div class="w3-container">
 
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
 
@@ -17,7 +17,7 @@
 
 </div>
 
-<div class="w3-panel">
+<div class="w3-container">
 
 <%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) ,class:"w3-button button-tiny w3-green" %> |
 <%%= link_to 'Back', <%= index_helper %>_path , class:"w3-button button-tiny w3-green" %>
